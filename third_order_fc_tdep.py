@@ -117,7 +117,7 @@ def normfc3_plot(atoms,normfc3,distancefc3,path,alpha=0.8):
     
     
 
-r_path = '/Users/shanyang/Desktop/VO2_temperature/VO2_R/425K/MD-5'
+r_path = #path
 fc3_raw=read_fc3(r_path)
 # lattice constant 
 abc,fract= read_poscar(r_path)
@@ -126,8 +126,8 @@ normfc3_r,distancefc3_r = normfc3_all_atoms(atoms_fc3,abc,positions_fc3)
 #normfc3_plot(6,normfc3_r,distancefc3_r,r_path)
 
 
-# M1 /Users/shanyang/Desktop/VO2_temperature/VO2_M1/M1-300K/MD-1
-m1_path = "/Users/shanyang/Desktop/VO2_temperature/VO2_M1/M1-300K/MD-6"
+
+m1_path = # path
 fc3_raw=read_fc3(m1_path)
 # lattice constant 
 abc,fract= read_poscar(m1_path)
@@ -136,8 +136,8 @@ normfc3_m1,distancefc3_m1 = normfc3_all_atoms(atoms_fc3,abc,positions_fc3)
 #normfc3_plot(12,normfc3_m1,distancefc3_m1,m1_path)
 
 
-fc_m1 = np.loadtxt('/Users/shanyang/Desktop/VO2_temperature/VO2_M1/M1-300K/MD-6/fc_plot')
-fc_r = np.loadtxt('/Users/shanyang/Desktop/VO2_temperature/VO2_R/425K/MD-5/fc_plot')
+fc_m1 = np.loadtxt(#path)
+fc_r = np.loadtxt(#path)
 fig, ax = plt.subplots(figsize=(8,5))
 ax.plot(fc_m1[:,1],fc_m1[:,2],'o',label = "M1",color = 'blue')
 ax.plot(fc_r[:,1],fc_r[:,2],'o',label = "Rutile",color = 'red')
